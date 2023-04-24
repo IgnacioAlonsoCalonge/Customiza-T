@@ -1,0 +1,39 @@
+.contenedor_carrito_compra{
+    display: grid;
+    grid-template-columns: 70% 25%;
+    gap: 5%;
+    position: relative;
+}
+
+#compra{
+    margin-top: 4rem;
+}
+
+.compra_descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.compras_tarjetas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compra_detalles_pago{
+  position: fixed;
+  top: 20%;
+  right: 0;
+  width: 25%;
+
+}
+
+.compra_detalles_pago h2{
+    width: max-content;
+  }
+
+
+
