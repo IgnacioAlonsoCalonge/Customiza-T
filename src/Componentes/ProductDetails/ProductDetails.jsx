@@ -11,8 +11,6 @@ const ProductDetails = () => {
 
   let { id } =  useParams()
 
-  console.log (id)
-
   let myProduct = products.find(product => product.id === id)
 
   return (

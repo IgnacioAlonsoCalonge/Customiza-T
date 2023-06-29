@@ -4,7 +4,7 @@ import './Boton_2.css'
 const Boton_2 = (props) => {
   return (
     <div className='section_boton'>
-        <a href={props.path}><span>{props.texto_boton}</span></a>        
+        <a onClick={props.onClick} href={props.path}><span>{props.texto_boton}</span></a>        
     </div>
   )
 }

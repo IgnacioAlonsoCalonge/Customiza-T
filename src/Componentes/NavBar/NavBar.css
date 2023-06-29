@@ -62,7 +62,7 @@
 
 .navigation_bar li:hover{
     scale: 1;
-    color: var(--color_red);
+    color: rgb(194, 49, 49);
 }
 
 .navigation_logo{
@@ -108,7 +108,6 @@
 .navigation_carrito_icon:hover{
     rotate: 5deg;
     scale: 1.15;
-    color: var(--color_red);
 }
 
 .navigation_responsive{
@@ -222,11 +221,8 @@
         align-items: center;
     }
 
-
     .navigation_bar h1{
         margin-left: 3rem;
     }
-
-    
   
 }

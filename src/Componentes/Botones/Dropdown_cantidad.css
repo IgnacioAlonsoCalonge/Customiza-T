@@ -33,6 +33,7 @@
     z-index: 10;
     transform: rotate(40deg);
     transition: 0.3s;
+    pointer-events: none;
   }
   
   .dropdown_1::after{
@@ -46,6 +47,7 @@
     z-index: 10;
     transform: rotate(-40deg);
     transition: 0.3s;
+    pointer-events: none;
   }
   
   .dropdown_1 .option{
@@ -68,6 +70,10 @@
     padding: 12px 20px;
     cursor: pointer;
     transition: all 0s ease;
+  }
+
+  .tarjetas_talla_tipo{
+    font-size: 1.3rem;
   }
   
   .dropdown_1 .option div:hover{

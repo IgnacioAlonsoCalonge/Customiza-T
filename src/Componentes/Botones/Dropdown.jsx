@@ -1,9 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Dropdown.css'
 
 
-const Dropdown = () => {
+const Dropdown = (props) => {
 
     
   const [active, setActive] = useState(false);
@@ -17,6 +17,7 @@ const Dropdown = () => {
   function selectOption(value){
     setSelectedValue(value);
     setActive(false);
+    props.onSizeChange(value)
   }
 
 
@@ -27,7 +28,7 @@ const Dropdown = () => {
         className='texto' 
         onClick={dropd} 
         readOnly
-        value={selectedValue}
+        value={props.selectedSize}
         placeholder='Selecciona tu talla'
         onChange={(e) => setSelectedValue(e.target.value)}>
         </input>

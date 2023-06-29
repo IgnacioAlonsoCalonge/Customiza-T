@@ -11,6 +11,7 @@ import fotoHome1 from './Assets/Vitri.png'
 import { useEffect } from 'react';
 import Compra from './Componentes/Compra/Compra';
 import Estampados from './Componentes/Estampados/Estampados';
+import Categorias_2 from './Componentes/Categorias_2/Categorias_2';
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
           <Route path='/custom' element={<Custom/>}/>
           <Route path='/categorias' element={<Categorias/>}/>
           <Route path='/compra' element={<Compra/>}/>
+          <Route path='/categoria/animales' element={<Categorias_2/>}/>
         </Routes>
       </div>
       <Footer/>

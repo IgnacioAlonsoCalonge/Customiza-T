@@ -6,6 +6,7 @@ import foto3 from '../../Assets/Categorias/Arboles.png'
 import foto4 from '../../Assets/Categorias/Afro_5.png'
 import { useState, useEffect } from 'react'
 import './Selector.css'
+import { Link } from 'react-router-dom'
 
 const Selector = () => {
     
@@ -32,26 +33,32 @@ const Selector = () => {
     <section id='productoss'
     onMouseEnter={()=> setAnimando(false)}
     onMouseLeave={()=> setAnimando(true)}>
-    <div class={active === 0 && animando ? "categoria hovering": "categoria"}>
+      
+    <Link to='/categoria/japon' className={active === 0 && animando ? "categoria hovering": "categoria"}>
       <img src={foto3} alt='foto1'/>
-      <div class={active === 0 && animando ? "categoria-hover1 s3" : "categoria-hover s3"}><h1>のとのできない</h1></div>
-    </div>
-    <div class={active === 1 && animando ? "categoria hovering": "categoria"}>
+      <div className={active === 0 && animando ? "categoria-hover1 s3" : "categoria-hover s3"}><h1>のとのできない</h1></div>
+    </Link>
+
+    <Link to='/categoria/paisajes' className={active === 1 && animando ? "categoria hovering": "categoria"}>
       <img src={foto} alt='foto1'/>
-      <div class={active === 1 && animando ? "categoria-hover1 s0" : "categoria-hover s0"}><h1>Paisajes</h1></div>
-    </div>
-    <div class={active === 2 && animando ?  "categoria hovering": "categoria"}>
+      <div className={active === 1 && animando ? "categoria-hover1 s0" : "categoria-hover s0"}><h1>Paisajes</h1></div>
+    </Link>
+
+    <Link to='/categoria/animales' className={active === 2 && animando ?  "categoria hovering": "categoria"}>
       <img src={foto1} alt='foto1'/>
       <div class={active === 2 && animando ? "categoria-hover1 s1" : "categoria-hover s1"}><h1>Animales</h1></div>
-    </div>
-    <div class={active === 3 && animando ? "categoria hovering": "categoria"}>
+    </Link>
+
+    <Link to='/categoria/anime' className={active === 3 && animando ? "categoria hovering": "categoria"}>
       <img src={foto2} alt='foto1'/>
       <div class={active === 3 && animando ? "categoria-hover1 s2" : "categoria-hover s2"}><h1>Anime</h1></div>
-    </div>
-    <div class={active === 4 && animando ? "categoria hovering": "categoria"}>
+    </Link>
+
+    <Link to='/categoria/retratos' className={active === 4 && animando ? "categoria hovering": "categoria"}>
       <img src={foto4} alt='foto1'/>
       <div class={active === 4 && animando ? "categoria-hover1 s5" : "categoria-hover s5"}><h1>Retratos</h1></div>
-    </div>
+    </Link>
+
   </section>
   )
 }

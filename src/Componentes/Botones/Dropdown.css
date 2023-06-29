@@ -36,6 +36,7 @@
     z-index: 10;
     transform: rotate(40deg);
     transition: 0.3s;
+    pointer-events: none;
   }
   
   .dropdown::after{
@@ -49,6 +50,8 @@
     z-index: 10;
     transform: rotate(-40deg);
     transition: 0.3s;
+    pointer-events: none;
+
   }
   
   .dropdown .option{
@@ -64,7 +67,8 @@
     opacity: 0;
     font-family: 'Montserrat';
     font-weight: bold;
-    transition: 0.25s;
+    transition: 0.3s;
+ 
   }
   
   .dropdown .option div{
